@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Введіть свої дані:</h1>
+      <form id="userForm">
+        <label for="firstName">Ваше Ім'я:</label>
+        <input type="text" id="firstName" required placeholder="Ігор" />
+
+        <label for="secondName">Ваше Призвище:</label>
+        <input type="text" id="secondName" required placeholder="Горай" />
+
+        <label for="email">Ваше Email:</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="exemple@email.com"
+        />
+
+        <label for="birthYear">Ваш рік народження:</label>
+        <input type="text" id="birthYear" required placeholder="1990" />
+
+        <button type="submit">Підтвердити</button>
+      </form>
+      <div id="userData"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
